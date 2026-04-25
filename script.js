@@ -27,8 +27,8 @@ if (prefersReducedMotion) {
       });
     },
     {
-      threshold: 0.14,
-      rootMargin: "0px 0px -8% 0px"
+      threshold: 0.05,
+      rootMargin: "0px 0px 22% 0px"
     }
   );
 
