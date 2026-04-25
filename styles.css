@@ -29,6 +29,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  padding-bottom: 2rem;
 }
 
 .scroll-progress {
@@ -574,6 +575,7 @@ main section {
   align-items: end;
   gap: 1rem;
   margin-top: 2.8rem;
+  margin-bottom: 2rem;
   padding: 1.15rem 1.1rem;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -581,6 +583,7 @@ main section {
   color: #e5e7eb;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 5rem;
 }
 
 .footer-main {

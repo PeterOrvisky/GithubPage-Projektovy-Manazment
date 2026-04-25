@@ -1,11 +1,14 @@
 const revealTargets = document.querySelectorAll(
-  "main section, .device-card, .feature-list li, .platform-card, .contact-direct, .footer"
+  "main section, .device-card, .feature-list li, .platform-card"
 );
+const alwaysVisibleTargets = document.querySelectorAll(".footer, .footer *");
 const progressBar = document.querySelector(".scroll-progress");
 const ambientA = document.querySelector(".ambient-a");
 const ambientB = document.querySelector(".ambient-b");
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+alwaysVisibleTargets.forEach((target) => target.classList.add("is-visible"));
 
 if (prefersReducedMotion) {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
